@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="styleATM.css">
+    <script src="scriptATM.js">
+    function atmWithdrawal(withDraw, balance) {
+      var bankFee = 0.50;
+      var withDraw = parseFloat(5 * (parseInt(withDraw, 10) / 5));
+      var newBalance = 0.0;
+      if( (balance > (withDraw + .5) && () ) {
+         parseFloat(balance - withdraw - bankFee);
+      } else {
+         // error - not enough in the bank
+      }
+      return newBalance;
+    }
+    </script>
+  </head>
+  <body>
+    <label for="withDrawal">Withdrawal Amount</label> 
+    <input id="withDrawal" type="number" min="5" max="2000" step="5" name="amountRequested" oninput="newBalance=atmWithdrawal();"><br>
+    <label for="currentBalance">Current Balance</label>
+    <input id="currentBalance" type="number" min="0" max="2000" name="oldBalance" oninput="newBalance=atmWithdrawal();"><br>
+    <label for="newBalance">New Balance</label>
+    <output id="newBalance" type="number" for="withDrawal currentBalance" name="newBalance">
+  </body>
+</html>
